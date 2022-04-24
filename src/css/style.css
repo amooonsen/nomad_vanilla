@@ -1,0 +1,152 @@
+/* ****************************** */
+/* common */
+
+html {
+    height: 100vh;
+		font-size: 10px;
+}
+
+button, a {cursor: pointer;}
+
+body {
+  font-family: sans-serif;
+}
+
+
+#container {
+	width:100%;
+}
+
+.hidden {
+	display: none;
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
+.opacity1 {
+    opacity: 1;
+}
+
+.block {
+	display: block;
+}
+
+/* ********************************* */
+/* intro */
+
+.intro-container {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.heading {
+    opacity: 0;
+	max-width: 1920px;
+	margin:0 auto;
+	font-size:5.2rem;
+	text-align: center;
+    transition: ease-out all 300ms;
+}
+
+.heading .user-data {
+	margin-left:15px;
+}
+
+.login-area {
+	opacity: 1;
+	padding-top:40px;
+	transition: ease-in-out 300ms;
+    color:#fff;
+}
+
+.user-area h3 {
+	color:#fff;
+	font-size:2.4rem;
+	text-align: center;
+}
+
+#user-id {
+	display: block;
+	margin: 20px auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+	background: none;
+	font-size:2rem;
+    outline-offset: 3px;
+}
+
+#user-id[type=text] {
+    color:inherit;
+    font-size:1.6rem;
+}
+
+#user-id::placeholder {
+	color:inherit;
+}
+
+#submit-btn {
+	display: block;
+	margin:0 auto;
+    padding-top:20px;
+    color:inherit;
+}
+
+.submit-txt {
+    font-size:1.8rem;
+    transition: ease-out all 0.5s 0.05s;
+    transform: rotateX(45deg);
+}
+
+.submit-txt:hover {
+    font-size:2.2rem;
+}
+
+/**********************************************/
+/* main contents */
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    max-width: 1300px;
+    height:inherit;
+}
+
+#main.hidden {
+    display: none;
+}
+
+.contents-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:0 auto;
+    gap:30px;
+}
+
+.contents {
+    width:23%;
+    min-height: 150px;
+}
+.item-area {
+    min-height: inherit;
+    padding:20px 30px;
+    background: #e8e8e8;
+    border:1px solid #333;
+    border-radius: 20px;
+}
+.clock {
+    text-transform: uppercase;
+}
+
+#quotes-area {
+    width: 140px;
+    cursor: pointer;
+}

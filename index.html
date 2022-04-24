@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/css/reset.css" rel="stylesheet">
+    <link href="/src/css/style.css" rel="stylesheet">
+    <script defer src="/src/js/index.js"></script>
+    <script defer src="/src/js/intro.js"></script>
+    <script defer src="/src/js/clock.js"></script>
+    <script defer src="/src/js/todo.js"></script>
+    <script defer src="/src/js/quotes.js"></script>
+    <script defer src="/src/js/weather.js"></script>
+
+    <title>Today</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+        </header>
+        <div id="content" role="main">
+            <div id="container">
+                <div class="intro-container">
+                    <h1 class="heading">Hello!<span class="user-data"></span></h1>
+                    <div class="login-area">
+                        <form class="login-form">
+                            <div class="user-area">
+                                <h3>What is your name?</h3>
+                                <input type="text" name="userId" id="user-id" autofocus placeholder="이름" minlength="1"
+                                    maxlength="15" required>
+                                <button type="submit" role="button" id="submit-btn"><span class="submit-txt">Let's
+                                        Go!</span></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="main" class="hidden">
+                        <ul class="contents-list">
+                            <li class="contents">
+                                <div class="item-area">
+                                    <div class="clock-wrap">
+                                        <p class="clock"></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contents">
+                                <div class="item-area">
+                                    <div class="todo-wrap">
+                                        <h3><span class="user-data"></span>의 할일</h3>
+                                        <form id="todo-form">
+                                            <input type="text" placeholder="Write a To Do and Press Enter" required />
+                                        </form>
+                                        <ul id="todo-list"></ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contents">
+                                <div id="quotes-area" class="item-area">
+                                    <h5 class="quotes"></h5>
+                                    <p class="author"></p>
+                                </div>
+                            </li>
+                            <li class="contents">
+                                <div class="item-area">
+                                    날씨
+                                </div>
+                            </li>
+                            <li class="contents">
+                                <div class="item-area">
+                                    날씨
+                                </div>
+                            </li>
+                            <li class="contents">
+                                <div class="item-area">
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="reset-wrap">
+                            <div class="reset-area">
+                                <button type="button" role="button" name="처음으로" id="reset-btn">처음으로</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
